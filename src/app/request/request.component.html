@@ -53,9 +53,8 @@
               <span *ngIf="isUriTemplate">Template</span>
             </label>
             <div class="p-1 col-sm-9">
-              <div class="form-control text-truncate" readonly="true"
-                   title="{{httpRequestEvent.uri}}"
-                   id="uri">{{httpRequestEvent.uri}}</div>
+              <input class="form-control" [(ngModel)]="newRequestUri"
+                     name="{{newRequestUri}}">
             </div>
           </div>
 
