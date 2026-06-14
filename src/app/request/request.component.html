@@ -79,8 +79,9 @@
               }
             </label>
             <div class="p-1 col-sm-9">
-              <input class="form-control" [(ngModel)]="newRequestUri"
-                     name="{{newRequestUri}}">
+              <div class="form-control text-truncate" title="{{ httpRequestEvent.uri }}" id="uri">
+                {{ httpRequestEvent.uri }}
+              </div>
             </div>
           </div>
 
